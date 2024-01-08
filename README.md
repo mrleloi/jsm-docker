@@ -63,7 +63,7 @@ docker volume create jira_home_data && docker network create jira-network && doc
 ## How to hack jira
 
 ```
-docker exec servicemanagement java -jar /var/agent/atlassian-agent.jar \
+docker exec servicemanagement java -jar /atlassian-agent.jar \
     -d \
     -p jsm \
     -m Hello@world.com \
@@ -80,7 +80,7 @@ docker exec servicemanagement java -jar /var/agent/atlassian-agent.jar \
 3. Execute :
 
 ```
-docker exec servicemanagement java -jar /var/agent/atlassian-agent.jar \
+docker exec servicemanagement java -jar /atlassian-agent.jar \
     -d \
     -p eu.softwareplant.biggantt \
     -m Hello@world.com \
